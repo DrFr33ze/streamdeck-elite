@@ -5,8 +5,8 @@
     <TargetFramework>net10.0-windows</TargetFramework>
     <RootNamespace>Elite</RootNamespace>
     <AssemblyName>com.mhwlng.elite</AssemblyName>
-    <AssemblyVersion>2.7.4.0</AssemblyVersion>
-    <FileVersion>2.7.4.0</FileVersion>
+    <AssemblyVersion>2.7.5.0</AssemblyVersion>
+    <FileVersion>2.7.5.0</FileVersion>
     <AssemblyTitle>Elite Dangerous Buttons</AssemblyTitle>
     <AssemblyProduct>Elite Dangerous Buttons</AssemblyProduct>
     <Copyright>Copyright © 2025</Copyright>
