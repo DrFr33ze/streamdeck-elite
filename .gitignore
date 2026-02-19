@@ -3,6 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# Stream Deck plugin package (built locally, distributed via GitHub Releases)
+*.streamDeckPlugin
+
 # User-specific files
 *.rsuser
 *.suo

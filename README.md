@@ -65,7 +65,9 @@ If .gif images are configured for Power/Limpet/Hyperspace/Route buttons, then no
 **You can clear the image/sound path, by clicking on the label in front of the file picker edit box.**
 
 The plugin can (optionally) automatically switch to a different profile, if the in-game state changes. (e.g. deploy hardpoints, enter SRV etc.)
-More instructions on the [Wiki](https://github.com/mhwlng/streamdeck-elite/wiki/Automatic-Profile-Switching).
+More instructions on the [Wiki](https://github.com/mhwlng/streamdeck-elite/wiki/Automatic-Profile-Switching). (original wiki)
+
+Supported devices: Stream Deck Classic, Mini, XL, Mobile, Plus and **Neo**.
 
 The supported toggle-buttons are:
 - Analysis Mode
@@ -204,7 +206,7 @@ In that case, the plugin has no access to the bindings directory.
 
 Start streamdeck.exe as administrator.
 
-The plugin installer is here: https://github.com/mhwlng/streamdeck-elite/releases
+The plugin installer is here: https://github.com/DrFr33ze/streamdeck-elite/releases
 
 To install the plugin, double click the file `com.mhwlng.elite.streamDeckPlugin` which should install the plugin.
 
@@ -245,6 +247,8 @@ Best is to create a separate directory for the images, so that they are not dele
 Also see companion application for Logitech Flight Instrument Panel and VR :
 
 https://github.com/mhwlng/fip-elite
+
+This is a fork of [mhwlng/streamdeck-elite](https://github.com/mhwlng/streamdeck-elite), updated for .NET 10 and with Stream Deck Neo support added.
 
 Thanks to :
 
