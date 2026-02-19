@@ -619,6 +619,7 @@ namespace Elite
             FindProfiles(DeviceType.StreamDeckMobile, manifest);
 
             FindProfiles(DeviceType.StreamDeckPlus, manifest);
+            FindProfiles(DeviceType.StreamDeckNeo, manifest);
         }
 
     }
