@@ -380,7 +380,7 @@ namespace EliteJournalReader
                 {
                     if (!journalThread.Join(30000))
                     {
-                        journalThread.Abort();
+                        Trace.TraceWarning("Previous journal reader thread did not stop within 30 seconds; it will terminate on its own.");
                     }
                 }
                 catch (Exception e)

@@ -8,8 +8,6 @@ using System.Threading.Tasks;
 using BarRaider.SdTools;
 using Microsoft.Win32;
 using NLog.LayoutRenderers;
-using IniParser;
-using IniParser.Model;
 using Newtonsoft.Json.Linq;
 
 namespace Elite
