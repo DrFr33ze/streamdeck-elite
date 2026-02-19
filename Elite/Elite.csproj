@@ -185,11 +185,21 @@
   <Target Name="PackagePlugin" AfterTargets="Build" Condition="'$(Configuration)' == 'Release'">
     <PropertyGroup>
       <PluginDir>$(OutputPath)</PluginDir>
+      <StagingDir>$(MSBuildProjectDirectory)\..\staging\com.mhwlng.elite.sdPlugin\</StagingDir>
       <PackageOutput>$(MSBuildProjectDirectory)\..\com.mhwlng.elite.streamDeckPlugin</PackageOutput>
     </PropertyGroup>
     <Message Text="Packaging plugin to $(PackageOutput) ..." Importance="high" />
+    <!-- Clean staging dir -->
+    <RemoveDir Directories="$(MSBuildProjectDirectory)\..\staging" />
+    <MakeDir Directories="$(StagingDir)" />
+    <!-- Copy plugin files into staging subfolder so ZIP contains com.mhwlng.elite.sdPlugin/ -->
+    <ItemGroup>
+      <PluginFiles Include="$(PluginDir)**\*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(PluginFiles)" DestinationFiles="@(PluginFiles->'$(StagingDir)%(RecursiveDir)%(Filename)%(Extension)')" />
     <Delete Files="$(PackageOutput)" Condition="Exists('$(PackageOutput)')" />
-    <ZipDirectory SourceDirectory="$(PluginDir)" DestinationFile="$(PackageOutput)" Overwrite="true" />
+    <ZipDirectory SourceDirectory="$(MSBuildProjectDirectory)\..\staging" DestinationFile="$(PackageOutput)" Overwrite="true" />
+    <RemoveDir Directories="$(MSBuildProjectDirectory)\..\staging" />
     <Message Text="Plugin packaged: $(PackageOutput)" Importance="high" />
   </Target>
 
